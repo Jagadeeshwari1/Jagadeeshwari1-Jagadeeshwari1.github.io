@@ -3,157 +3,200 @@
 <head>
     <meta charset="UTF-8">
     <title>Jagadeeshwari - Portfolio</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <h1>Jagadeeshwari</h1>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#awards">Awards</a></li>
-            <li><a href="#volunteering">Volunteering</a></li>
-            <li><a href="#certifications">Certifications</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <a href="#"><span class="logo-text">Jagadeeshwari</span></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#awards">Awards</a></li>
+                <li><a href="#volunteering">Volunteering</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="mailto:your.email@example.com" class="resume-btn">Email Me</a>
+            </div>
+        </div>
     </nav>
-    <main>
-        <section id="about">
-            <div class="profile-header">
-                <img src="profile.jpg" alt="Jagadeeshwari profile photo" class="profile-photo">
-                <div>
-                    <h2>About Me</h2>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="profile-img-container">
+                <img src="profile.jpg" alt="Jagadeeshwari" class="profile-img">
+            </div>
+            <div>
+                <h1 class="hero-name">Jagadeeshwari</h1>
+                <p class="hero-role">Aspiring Data Analyst & Project Manager</p>
+                <p class="hero-desc">
+                    Masters student in Applied Analytics at Saint Louis University. I am passionate about data-driven solutions, financial analysis, and impactful project management.
+                </p>
+                <div class="hero-socials">
+                    <a href="https://linkedin.com/in/your-linkedin" target="_blank"><img src="linkedin.png" alt="LinkedIn"></a>
+                    <a href="https://github.com/Jagadeeshwari1" target="_blank"><img src="github.png" alt="GitHub"></a>
+                    <a href="https://instagram.com/your-instagram" target="_blank"><img src="instagram.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-stats">
+            <div class="stat-item">
+                <span class="stat-number">5+</span>
+                <span class="stat-label">Projects Deployed</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">3</span>
+                <span class="stat-label">Internships</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">2</span>
+                <span class="stat-label">Awards</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <p>
+                I am Jagadeeshwari, a dedicated and enthusiastic analytics professional with a strong foundation in business administration and hands-on experience in data analytics, visualization, and project management. Currently pursuing my Masters in Applied Analytics at Saint Louis University, I am passionate about using data to drive business decisions and create real-world impact. My strengths lie in problem-solving, teamwork, and a constant drive for learning and growth. I thrive in dynamic environments where I can leverage both my analytical and people skills to deliver results.
+            </p>
+        </div>
+    </section>
+
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Data Visualization Intern</h3>
+                    <p><strong>Excelerate, Associated by Saint Louis University</strong> | May 2025 | United States</p>
                     <p>
-                        Hello! I'm Jagadeeshwari, passionate about data analytics, business insights, and project management. Currently pursuing my Masters in Applied Analytics at Saint Louis University, I have hands-on experience in data visualization, project management, and financial analysis. I enjoy solving real-world problems with data-driven solutions.
+                        Designed and developed interactive dashboards and reports to support business decision-making. Utilized visualization tools to translate complex datasets into actionable insights for faculty and industry partners. Collaborated with cross-functional teams, ensuring data accuracy and clarity in all deliverables.
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Project Management Intern</h3>
+                    <p><strong>Excelerate, Associated by Saint Louis University</strong> | January 2025 | United States</p>
+                    <p>
+                        Assisted in planning, executing, and monitoring multiple academic and industry projects. Coordinated with stakeholders, tracked project milestones, and ensured timely delivery of key tasks. Implemented best practices in project documentation and communication for effective team collaboration.
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Finance Analyst Intern</h3>
+                    <p><strong>L&T Pvt Ltd</strong> | September 2022 – December 2022 | Hyderabad</p>
+                    <p>
+                        Supported the finance team in budgeting, forecasting, and financial analysis tasks. Conducted capital budgeting exercises and assisted in preparing financial statements. Gained hands-on experience with financial modeling, risk analysis, and reporting under supervision of senior analysts.
                     </p>
                 </div>
             </div>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/your-linkedin" target="_blank" title="LinkedIn">
-                    <img src="linkedin.png" alt="LinkedIn">
-                </a>
-                <a href="https://github.com/Jagadeeshwari1" target="_blank" title="GitHub">
-                    <img src="github.png" alt="GitHub">
-                </a>
-                <a href="https://www.instagram.com/your-instagram" target="_blank" title="Instagram">
-                    <img src="instagram.png" alt="Instagram">
-                </a>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Capital Budgeting</h3>
+                    <p>
+                        <b>Associated with L&T Pvt Ltd.</b><br>
+                        Developed a comprehensive capital budgeting model to evaluate investment opportunities. The project involved cash flow analysis, risk assessment, and scenario-based forecasting to support strategic decision-making for large-scale infrastructure projects.
+                    </p>
+                </div>
+                <div class="project-card">
+                    <h3>Customer Orders Database Solutions</h3>
+                    <p>
+                        <b>MS SQL Server | Saint Louis University</b><br>
+                        Designed and implemented a robust database solution to manage and analyze customer orders. Created optimized queries and reporting tools to streamline business operations and enhance data-driven insights for management.
+                    </p>
+                </div>
+                <div class="project-card">
+                    <h3>Job Satisfaction Analysis</h3>
+                    <p>
+                        <b>Saint Louis University</b><br>
+                        Conducted a thorough analysis of employee survey data to identify key drivers of job satisfaction. Applied statistical techniques to uncover patterns and presented recommendations to improve organizational culture and retention rates.
+                    </p>
+                </div>
+                <div class="project-card">
+                    <h3>Predicting School Safety Using ML</h3>
+                    <p>
+                        <b>Personal Project</b><br>
+                        Built predictive machine learning models to assess and forecast school safety levels. Integrated diverse data sources, engineered features, and published findings in an academic paper to highlight the potential of AI in safety analytics.
+                    </p>
+                </div>
+                <div class="project-card">
+                    <h3>Predictive Modeling for Restaurant Sales Improvement</h3>
+                    <p>
+                        <b>Personal Project</b><br>
+                        Developed and deployed machine learning models to forecast restaurant sales and recommend actionable strategies for increasing revenue. Utilized historical sales data, external factors, and advanced analytics to inform business decisions.
+                    </p>
+                </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="skills">
-            <h2>Skills</h2>
-            <ul class="skills-list">
-                <li>Data Visualization (Power BI, Tableau)</li>
-                <li>Data Analytics</li>
-                <li>SQL (MS SQL Server)</li>
-                <li>Python (Pandas, scikit-learn)</li>
-                <li>Machine Learning</li>
-                <li>Project Management</li>
-                <li>Financial Analysis</li>
-                <li>Business Administration</li>
-                <li>Team Collaboration</li>
-                <li>Fundraising & NGO Management</li>
-                <li>Report Writing & Paper Publication</li>
-            </ul>
-        </section>
+    <section id="education" class="section">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Masters in Applied Analytics</h3>
+                    <p><strong>Saint Louis University</strong> | August 2024 – May 2026</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Bachelors in Business Administration</h3>
+                    <p><strong>Osmania University</strong> | July 2020 – July 2023</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <section id="projects">
-            <h2>Projects</h2>
-            <ul>
-                <li>
-                    <strong>Capital Budgeting</strong> – Associated with L&T Pvt Ltd.<br>
-                    Financial modeling and investment analysis for strategic business decisions.
-                </li>
-                <li>
-                    <strong>Customer Orders Database Solutions (MS SQL Server)</strong> – Saint Louis University<br>
-                    Designed and implemented SQL database for order management and reporting.
-                </li>
-                <li>
-                    <strong>Job Satisfaction Analysis</strong> – Saint Louis University<br>
-                    Analyzed survey data to identify factors impacting job satisfaction.
-                </li>
-                <li>
-                    <strong>Predicting School Safety Using Machine Learning Algorithms</strong> – Personal Project<br>
-                    Built predictive models for school safety; published a paper on findings.
-                </li>
-                <li>
-                    <strong>Predictive Modeling for Restaurant Sales Improvement</strong> – Personal Project<br>
-                    Developed machine learning models to forecast and improve restaurant sales.
-                </li>
-            </ul>
-        </section>
-
-        <section id="experience">
-            <h2>Experience</h2>
-            <ul>
-                <li>
-                    <strong>Data Visualization Intern</strong>, Excelerate (Saint Louis University)<br>
-                    <em>May 2025, United States</em>
-                </li>
-                <li>
-                    <strong>Project Management Intern</strong>, Excelerate (Saint Louis University)<br>
-                    <em>January 2025, United States</em>
-                </li>
-                <li>
-                    <strong>Finance Analyst Intern</strong>, L&T Pvt Ltd<br>
-                    <em>September 2022 – December 2022, Hyderabad</em>
-                </li>
-            </ul>
-        </section>
-
-        <section id="education">
-            <h2>Education</h2>
-            <ul>
-                <li>
-                    <strong>Masters in Applied Analytics</strong><br>
-                    Saint Louis University, August 2024 – May 2026
-                </li>
-                <li>
-                    <strong>Bachelors in Business Administration</strong><br>
-                    Osmania University, July 2020 – July 2023
-                </li>
-            </ul>
-        </section>
-
-        <section id="awards">
-            <h2>Awards & Honors</h2>
+    <section id="awards" class="section">
+        <div class="container">
+            <h2 class="section-title">Awards & Honors</h2>
             <ul>
                 <li>Star Performer Award – Data Visualization Intern</li>
                 <li>Star Performer Award – Project Management Intern</li>
                 <li>Paper Publication – School Safety Prediction Using ML</li>
             </ul>
-        </section>
+        </div>
+    </section>
 
-        <section id="volunteering">
-            <h2>Volunteering</h2>
-            <ul>
-                <li>
-                    <strong>Fundraising Manager</strong>, Save the Girl Child NGO<br>
-                    Raised ₹70,000 to support the cause.
-                </li>
-            </ul>
-        </section>
+    <section id="volunteering" class="section">
+        <div class="container">
+            <h2 class="section-title">Volunteering</h2>
+            <div class="volunteering-card">
+                <h3>Fundraising Manager</h3>
+                <p>Save the Girl Child NGO<br>Raised ₹70,000 to support the cause. Organized fundraising initiatives, built donor relationships, and promoted awareness for girl child education and safety.</p>
+            </div>
+        </div>
+    </section>
 
-        <section id="certifications">
-            <h2>Certifications</h2>
+    <section id="certifications" class="section">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
             <ul>
                 <li>Pandas (Python Data Analysis)</li>
             </ul>
-        </section>
+        </div>
+    </section>
 
-        <section id="contact">
-            <h2>Contact</h2>
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
             <ul>
                 <li>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></li>
-                <li>LinkedIn: <a href="https://www.linkedin.com/in/your-linkedin" target="_blank">your-linkedin</a></li>
+                <li>LinkedIn: <a href="https://linkedin.com/in/your-linkedin" target="_blank">your-linkedin</a></li>
                 <li>GitHub: <a href="https://github.com/Jagadeeshwari1" target="_blank">Jagadeeshwari1</a></li>
             </ul>
-            <h3>Send a Message</h3>
             <form class="contact-form" action="mailto:your.email@example.com" method="POST" enctype="text/plain">
                 <input type="text" name="name" placeholder="Your Name" required>
                 <input type="email" name="email" placeholder="Your Email" required>
@@ -161,8 +204,9 @@
                 <button type="submit">Send</button>
             </form>
             <p class="note">*Contact form uses mailto: your default email app will open when you submit.</p>
-        </section>
-    </main>
+        </div>
+    </section>
+
     <footer>
         <p>&copy; 2025 Jagadeeshwari. All rights reserved.</p>
     </footer>
