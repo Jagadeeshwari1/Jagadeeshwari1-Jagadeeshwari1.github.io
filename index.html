@@ -1,214 +1,359 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Jagadeeshwari - Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <title>Jagadeeshwari Mandapalli - Portfolio</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7MT9R7P1LK"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-7MT9R7P1LK');
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <nav class="navbar">
         <div class="nav-content">
             <div class="logo">
-                <a href="#"><span class="logo-text">Jagadeeshwari</span></a>
+                <a href="#home" class="logo-link">
+                    <span class="logo-text">Jagadeeshwari</span>
+                    <span class="logo-highlight">Mandapalli</span>
+                </a>
             </div>
-            <ul class="nav-links">
-                <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#awards">Awards</a></li>
-                <li><a href="#volunteering">Volunteering</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="nav-actions">
-                <a href="mailto:your.email@example.com" class="resume-btn">Email Me</a>
+            <div class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#certificates">Certificates</a></li>
+                    <li><a href="#awards">Awards</a></li>
+                    <li><a href="#volunteering">Volunteering</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="Resume/Resume.pdf" class="resume-btn" download>
+                        <i class="fas fa-download"></i>
+                        <span>Resume</span>
+                    </a>
+                </div>
             </div>
+            <button class="menu-btn" aria-label="Toggle Menu">
+                <span class="menu-icon"></span>
+            </button>
         </div>
     </nav>
+
     <section id="home" class="hero">
-        <div class="hero-content">
-            <div class="profile-img-container">
-                <img src="profile.jpg" alt="Jagadeeshwari" class="profile-img">
+        <div class="hero-content" data-aos="fade-up">
+            <div class="profile-image-container" data-aos="fade-down" data-aos-delay="200">
+                <div class="profile-image-wrapper">
+                    <img src="images/DP.jpeg" alt="Jagadeeshwari Mandapalli" class="profile-image">
+                </div>
             </div>
-            <div>
-                <h1 class="hero-name">Jagadeeshwari</h1>
-                <p class="hero-role">Aspiring Data Analyst & Project Manager</p>
-                <p class="hero-desc">
-                    Masters student in Applied Analytics at Saint Louis University. I am passionate about data-driven solutions, financial analysis, and impactful project management.
-                </p>
-                <div class="hero-socials">
-                    <a href="https://linkedin.com/in/your-linkedin" target="_blank"><img src="linkedin.png" alt="LinkedIn"></a>
-                    <a href="https://github.com/Jagadeeshwari1" target="_blank"><img src="github.png" alt="GitHub"></a>
-                    <a href="https://instagram.com/your-instagram" target="_blank"><img src="instagram.png" alt="Instagram"></a>
+            <h1 class="hero-name" data-aos="fade-up" data-aos-delay="300">Jagadeeshwari Mandapalli</h1>
+            <p class="hero-role" data-aos="fade-up" data-aos-delay="400">SQL & Power BI Developer</p>
+            <div class="hero-description" data-aos="fade-up" data-aos-delay="500">
+                <p>Business Intelligence Developer | SQL & Power BI | Data Enthusiast<br>
+                Passionate about transforming raw data into actionable business insights using industry-leading tools and best practices. Experienced in designing databases, automating data pipelines, and building interactive dashboards.</p>
+            </div>
+            <div class="hero-expertise" data-aos="fade-up" data-aos-delay="600">
+                <div class="expertise-item">
+                    <i class="fas fa-database"></i>
+                    <span>MS SQL Server</span>
+                </div>
+                <div class="expertise-item">
+                    <i class="fas fa-chart-bar"></i>
+                    <span>Power BI</span>
+                </div>
+                <div class="expertise-item">
+                    <i class="fas fa-code"></i>
+                    <span>Python</span>
+                </div>
+                <div class="expertise-item">
+                    <i class="fas fa-file-excel"></i>
+                    <span>Excel</span>
                 </div>
             </div>
         </div>
-        <div class="hero-stats">
-            <div class="stat-item">
-                <span class="stat-number">5+</span>
-                <span class="stat-label">Projects Deployed</span>
-            </div>
-            <div class="stat-item">
-                <span class="stat-number">3</span>
-                <span class="stat-label">Internships</span>
-            </div>
-            <div class="stat-item">
-                <span class="stat-number">2</span>
-                <span class="stat-label">Awards</span>
-            </div>
-        </div>
     </section>
 
-    <section id="about" class="section">
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <p>
-                I am Jagadeeshwari, a dedicated and enthusiastic analytics professional with a strong foundation in business administration and hands-on experience in data analytics, visualization, and project management. Currently pursuing my Masters in Applied Analytics at Saint Louis University, I am passionate about using data to drive business decisions and create real-world impact. My strengths lie in problem-solving, teamwork, and a constant drive for learning and growth. I thrive in dynamic environments where I can leverage both my analytical and people skills to deliver results.
-            </p>
-        </div>
-    </section>
-
-    <section id="experience" class="section">
-        <div class="container">
-            <h2 class="section-title">Experience</h2>
+            <h2 class="section-title" data-aos="fade-up">Professional Experience</h2>
             <div class="timeline">
-                <div class="timeline-item">
-                    <h3>Data Visualization Intern</h3>
-                    <p><strong>Excelerate, Associated by Saint Louis University</strong> | May 2025 | United States</p>
-                    <p>
-                        Designed and developed interactive dashboards and reports to support business decision-making. Utilized visualization tools to translate complex datasets into actionable insights for faculty and industry partners. Collaborated with cross-functional teams, ensuring data accuracy and clarity in all deliverables.
-                    </p>
+                <!-- Experience Item 1 -->
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>SQL & Power BI Developer</h3>
+                            <span class="timeline-date">Mar 2024 - Present</span>
+                        </div>
+                        <h4>XYZ Solutions Pvt Ltd | Hyderabad, India</h4>
+                        <ul>
+                            <li>Developed, maintained, and optimized MS SQL Server databases for customer order management, inventory, and transaction records.</li>
+                            <li>Created interactive Power BI dashboards for sales, orders, and KPI monitoring, automating data refresh and visualization processes.</li>
+                            <li>Collaborated with cross-functional teams to understand business requirements and deliver actionable data insights for strategic decision-making.</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span>MS SQL Server</span>
+                            <span>Power BI</span>
+                            <span>T-SQL</span>
+                            <span>Excel</span>
+                            <span>Python</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="timeline-item">
-                    <h3>Project Management Intern</h3>
-                    <p><strong>Excelerate, Associated by Saint Louis University</strong> | January 2025 | United States</p>
-                    <p>
-                        Assisted in planning, executing, and monitoring multiple academic and industry projects. Coordinated with stakeholders, tracked project milestones, and ensured timely delivery of key tasks. Implemented best practices in project documentation and communication for effective team collaboration.
-                    </p>
-                </div>
-                <div class="timeline-item">
-                    <h3>Finance Analyst Intern</h3>
-                    <p><strong>L&T Pvt Ltd</strong> | September 2022 – December 2022 | Hyderabad</p>
-                    <p>
-                        Supported the finance team in budgeting, forecasting, and financial analysis tasks. Conducted capital budgeting exercises and assisted in preparing financial statements. Gained hands-on experience with financial modeling, risk analysis, and reporting under supervision of senior analysts.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects" class="section">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <h3>Capital Budgeting</h3>
-                    <p>
-                        <b>Associated with L&T Pvt Ltd.</b><br>
-                        Developed a comprehensive capital budgeting model to evaluate investment opportunities. The project involved cash flow analysis, risk assessment, and scenario-based forecasting to support strategic decision-making for large-scale infrastructure projects.
-                    </p>
-                </div>
-                <div class="project-card">
-                    <h3>Customer Orders Database Solutions</h3>
-                    <p>
-                        <b>MS SQL Server | Saint Louis University</b><br>
-                        Designed and implemented a robust database solution to manage and analyze customer orders. Created optimized queries and reporting tools to streamline business operations and enhance data-driven insights for management.
-                    </p>
-                </div>
-                <div class="project-card">
-                    <h3>Job Satisfaction Analysis</h3>
-                    <p>
-                        <b>Saint Louis University</b><br>
-                        Conducted a thorough analysis of employee survey data to identify key drivers of job satisfaction. Applied statistical techniques to uncover patterns and presented recommendations to improve organizational culture and retention rates.
-                    </p>
-                </div>
-                <div class="project-card">
-                    <h3>Predicting School Safety Using ML</h3>
-                    <p>
-                        <b>Personal Project</b><br>
-                        Built predictive machine learning models to assess and forecast school safety levels. Integrated diverse data sources, engineered features, and published findings in an academic paper to highlight the potential of AI in safety analytics.
-                    </p>
-                </div>
-                <div class="project-card">
-                    <h3>Predictive Modeling for Restaurant Sales Improvement</h3>
-                    <p>
-                        <b>Personal Project</b><br>
-                        Developed and deployed machine learning models to forecast restaurant sales and recommend actionable strategies for increasing revenue. Utilized historical sales data, external factors, and advanced analytics to inform business decisions.
-                    </p>
+                <!-- Experience Item 2 -->
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Data Analyst Intern</h3>
+                            <span class="timeline-date">Aug 2023 - Feb 2024</span>
+                        </div>
+                        <h4>ABC Analytics | Remote</h4>
+                        <ul>
+                            <li>Performed data cleaning, transformation, and visualization using Power BI and Excel to support business reporting.</li>
+                            <li>Automated routine reporting tasks, reducing manual effort by 30% and improving data accuracy.</li>
+                            <li>Assisted in preparing documentation and presentations for stakeholders using Word and PowerPoint.</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span>Power BI</span>
+                            <span>Excel</span>
+                            <span>Word</span>
+                            <span>PowerPoint</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="education" class="section">
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
         <div class="container">
-            <h2 class="section-title">Education</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <h3>Masters in Applied Analytics</h3>
-                    <p><strong>Saint Louis University</strong> | August 2024 – May 2026</p>
+            <h2 class="section-title" data-aos="fade-up">Featured Projects</h2>
+            <div class="projects-grid" data-aos="fade-up">
+                <!-- Project 1 -->
+                <div class="project-card" data-aos="fade-up" data-aos-duration="800" data-aos-offset="200">
+                    <div class="project-image">
+                        <img src="images/customer-orders-db.png" alt="Customer Orders Database Solutions (MS SQL Server)">
+                    </div>
+                    <div class="project-content">
+                        <h3>Customer Orders Database Solutions (MS SQL Server)</h3>
+                        <ul class="project-features">
+                            <li>Designed and implemented normalized relational database schemas in MS SQL Server, utilizing Microsoft Visio for ERD modeling and ensuring data integrity.</li>
+                            <li>Developed complex T-SQL queries and automated data processing with Python and Data Migration Assistant for seamless database migration.</li>
+                            <li>Leveraged Excel and Word for data analysis and documentation, delivering comprehensive reports and actionable business insights.</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>MS SQL Server</span>
+                            <span>T-SQL</span>
+                            <span>Python</span>
+                            <span>Excel</span>
+                            <span>Word</span>
+                            <span>Microsoft Visio</span>
+                            <span>Data Migration Assistant</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="timeline-item">
-                    <h3>Bachelors in Business Administration</h3>
-                    <p><strong>Osmania University</strong> | July 2020 – July 2023</p>
+                <!-- Project 2 -->
+                <div class="project-card" data-aos="fade-up" data-aos-duration="800" data-aos-offset="200">
+                    <div class="project-image">
+                        <img src="images/adventureworks-dashboard.png" alt="Adventure Works Sales Analysis Dashboard">
+                    </div>
+                    <div class="project-content">
+                        <h3>Adventure Works Sales Analysis Dashboard (Power BI)</h3>
+                        <ul class="project-features">
+                            <li>Imported and cleaned raw CSV sales data in Power BI, applying advanced data transformation and building robust data models with accurate relationships.</li>
+                            <li>Designed and developed interactive dashboards and visualizations, translating complex datasets into actionable sales KPIs and trends.</li>
+                            <li>Utilized Python and Excel for data visualization and analysis, and presented insights to stakeholders to enable data-driven decision-making.</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>Power BI</span>
+                            <span>Power Query</span>
+                            <span>DAX</span>
+                            <span>Python</span>
+                            <span>Excel</span>
+                            <span>CSV</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="view-more" data-aos="fade-up">
+                <a href="https://github.com/Jagadeeshwari1" target="_blank" class="view-more-btn">
+                    <i class="fab fa-github"></i> View More on GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Education</h2>
+            <div class="education-grid">
+                <div class="education-card" data-aos="fade-up">
+                    <div class="education-header">
+                        <div class="education-title-group">
+                            <img src="images/college-logo.png" alt="College Logo" class="university-logo">
+                            <div>
+                                <h3>Bachelor of Technology in Computer Science</h3>
+                                <h4>JNTU Hyderabad | Hyderabad, India</h4>
+                            </div>
+                        </div>
+                        <span class="education-date">May 2023</span>
+                    </div>
+                    <div class="education-content">
+                        <div class="coursework">
+                            <h5>Key Coursework</h5>
+                            <div class="course-tags">
+                                <span>Database Systems</span>
+                                <span>Data Structures</span>
+                                <span>Operating Systems</span>
+                                <span>Business Intelligence</span>
+                            </div>
+                        </div>
+                        <div class="certifications">
+                            <h5>Achievements</h5>
+                            <div class="cert-tags">
+                                <span>Top 5% of Class</span>
+                                <span>Dean's List</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="awards" class="section">
+    <!-- Certificates Section -->
+    <section id="certificates" class="certificates">
         <div class="container">
-            <h2 class="section-title">Awards & Honors</h2>
-            <ul>
-                <li>Star Performer Award – Data Visualization Intern</li>
-                <li>Star Performer Award – Project Management Intern</li>
-                <li>Paper Publication – School Safety Prediction Using ML</li>
+            <h2 class="section-title" data-aos="fade-up">Certificates</h2>
+            <ul class="cert-list" data-aos="fade-up">
+                <li>Microsoft Certified: Power BI Data Analyst Associate</li>
+                <li>SQL Server Database Fundamentals (Microsoft)</li>
+                <li>Python for Everybody (Coursera)</li>
+                <li>Data Visualization with Python (IBM)</li>
             </ul>
         </div>
     </section>
 
-    <section id="volunteering" class="section">
+    <!-- Awards Section -->
+    <section id="awards" class="awards">
         <div class="container">
-            <h2 class="section-title">Volunteering</h2>
-            <div class="volunteering-card">
-                <h3>Fundraising Manager</h3>
-                <p>Save the Girl Child NGO<br>Raised ₹70,000 to support the cause. Organized fundraising initiatives, built donor relationships, and promoted awareness for girl child education and safety.</p>
+            <h2 class="section-title" data-aos="fade-up">Awards</h2>
+            <ul class="award-list" data-aos="fade-up">
+                <li>Best Data Analytics Project Award – 2024, XYZ Solutions</li>
+                <li>Academic Excellence Award – JNTU Hyderabad</li>
+                <li>Dean’s List – JNTU Hyderabad (2022, 2023)</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Volunteering Section -->
+    <section id="volunteering" class="volunteering">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Volunteering</h2>
+            <ul class="volunteer-list" data-aos="fade-up">
+                <li>Data Analytics Volunteer, NGO India (2022): Analyzed survey data and visualized impact statistics for annual report.</li>
+                <li>Technical Mentor, Women in Tech Hyderabad (2023): Guided students on SQL and Power BI fundamentals in workshops.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
+            <div class="contact-container" data-aos="fade-up">
+                <div class="contact-form-container">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+                <div class="contact-info-container">
+                    <div class="contact-info-item">
+                        <i class="fab fa-linkedin"></i>
+                        <div class="info-content">
+                            <h3>LinkedIn</h3>
+                            <p>
+                                <a href="https://linkedin.com/in/jagadeeshwari-mandapalli" target="_blank" class="contact-link">linkedin.com/in/jagadeeshwari-mandapalli</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="fab fa-github"></i>
+                        <div class="info-content">
+                            <h3>GitHub</h3>
+                            <p>
+                                <a href="https://github.com/Jagadeeshwari1" target="_blank" class="contact-link">github.com/Jagadeeshwari1</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div class="info-content">
+                            <h3>Email</h3>
+                            <p>
+                                <a href="mailto:jagadeeshwari.mandapalli@gmail.com" class="contact-link">jagadeeshwari.mandapalli@gmail.com</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="info-content">
+                            <h3>Location</h3>
+                            <p>Hyderabad, India</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/jagadeeshwari-mandapalli" target="_blank" class="social-link linkedin-link" title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/Jagadeeshwari1" target="_blank" class="social-link github-link" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="certifications" class="section">
+    <footer class="footer">
         <div class="container">
-            <h2 class="section-title">Certifications</h2>
-            <ul>
-                <li>Pandas (Python Data Analysis)</li>
-            </ul>
+            <div class="footer-content">
+                <p class="copyright">&copy; 2025 Jagadeeshwari Mandapalli. All rights reserved.</p>
+            </div>
         </div>
-    </section>
-
-    <section id="contact" class="section">
-        <div class="container">
-            <h2 class="section-title">Contact</h2>
-            <ul>
-                <li>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></li>
-                <li>LinkedIn: <a href="https://linkedin.com/in/your-linkedin" target="_blank">your-linkedin</a></li>
-                <li>GitHub: <a href="https://github.com/Jagadeeshwari1" target="_blank">Jagadeeshwari1</a></li>
-            </ul>
-            <form class="contact-form" action="mailto:your.email@example.com" method="POST" enctype="text/plain">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-            <p class="note">*Contact form uses mailto: your default email app will open when you submit.</p>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Jagadeeshwari. All rights reserved.</p>
     </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
