@@ -80,13 +80,13 @@ ul {
     padding: 2rem 0;
     position: relative;
     overflow: hidden;
-    background-image: url('../images/bg.JPG');
+    background-image: url('..images/bg.jpeg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
 body {
-  background-image: url('images/bg.JPG');
+  background-image: url('images/bg.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
